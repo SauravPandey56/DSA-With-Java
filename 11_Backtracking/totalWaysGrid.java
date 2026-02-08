@@ -1,5 +1,6 @@
 // find number of ways to reach from (0,0) to (n-1,m-1) in a N*M Grid
 // ALLOWED MOVES :->  right or down
+// TIME Complexity -> O(2ⁿ⁺ᵐ) , Space Complexity -> Stack
 public class totalWaysGrid {
     public static int gridWays(int i,int j,int n, int m ){
         //base case 
