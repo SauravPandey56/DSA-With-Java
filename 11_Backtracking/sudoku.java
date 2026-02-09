@@ -26,6 +26,41 @@ public class sudoku {
         return true ;
     }
     public static boolean sudokuSolver(int sudoku [][],int row,int col){
-        
+      //base case
+      if(row==9){
+        return true ;
+      } 
+      // recursion 
+      int nextRow = row , nextCol= col+1;
+      if(col+1 == 9){
+        nextRow = row, nextcol = col+1;
+        nextcol = 0;
+      } 
+      if(sudoku [row][col]!=0){
+        return sudokuSolver(sudoku,nextRow,nextCol);
+      }
+      for(int digit = 1; digit<=9;digit++){
+        if(isSafe (sudoku,row,col,digit)){
+            sudoku[row][col]=digit;
+            if(sudokuSolver (sudoku,nextRow,nextCol)){ // solution exists
+                return true;      
+            }
+            sudoku[row][col] = 0;
+        }
+      }
+      return false;
+    }
+    public static voidSudoku(int sudoku[][]){
+        for(int i = 0; i<9;i++){
+            for(int j=0;j<9;j++){
+                System.out.print(sudoku [i][j] + "");
+            }
+            System.out.println();
+        }
+    }
+    public static void main (String args[]){
+        int sudoku[][]={
+          {}
+        }
     }
 }
