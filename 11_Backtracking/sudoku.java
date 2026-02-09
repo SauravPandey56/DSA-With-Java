@@ -1,5 +1,5 @@
 public class sudoku {
-    public static boolean isSafe(int suduko[][], int row, int col, int digit) {
+    public static boolean isSafe(int sudoku[][], int row, int col, int digit) {
         // column
         for (int i = 0; i <= 8; i++) {
             if (sudoku[i][col] == digit) {
@@ -33,8 +33,8 @@ public class sudoku {
       // recursion 
       int nextRow = row , nextCol= col+1;
       if(col+1 == 9){
-        nextRow = row, nextcol = col+1;
-        nextcol = 0;
+        nextRow = row+1;
+        nextCol = 0;
       } 
       if(sudoku [row][col]!=0){
         return sudokuSolver(sudoku,nextRow,nextCol);
@@ -50,7 +50,7 @@ public class sudoku {
       }
       return false;
     }
-    public static voidSudoku(int sudoku[][]){
+    public static void Sudoku(int sudoku[][]){
         for(int i = 0; i<9;i++){
             for(int j=0;j<9;j++){
                 System.out.print(sudoku [i][j] + "");
@@ -69,7 +69,7 @@ public class sudoku {
           {0,3,0,0,7,2,0,0,4},
           {0,4,9,0,3,0,0,5,7},
           {8,2,7,0,0,9,0,1,3}
-        }
+        };
         if(sudokuSolver(sudoku,0,0)){
             System.out.println("solution exists");
         }else{
