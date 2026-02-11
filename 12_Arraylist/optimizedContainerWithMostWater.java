@@ -1,3 +1,8 @@
+// for given n lines on X-axis,use 2 lines to form a container 
+// such that it holsd maximum water
+//  ...height = {1,8,6,2,5,4,8,3,7}
+// 2 pinter  APPROACH
+// time complexity is O(n)
 import java.util.*;
 public class optimizedContainerWithMostWater {
     public static int storeWater(ArrayList<Integer>height){
