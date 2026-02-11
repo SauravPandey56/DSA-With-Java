@@ -1,3 +1,8 @@
+// find if any pair in a sorted & Rotated Arraylist has a target sum 
+// list [11,15,6,8,9,10] Target = 16
+// 2 Pointer Approach
+
+
 import java.util.*;
 
 public class sumOfPair2 {
