@@ -1,4 +1,6 @@
-// for goven n lines on X-axis,use 2 lines to form a container such that it holsd maximum water ...height = {1,8,6,2,5,4,8,3,7}
+// for given n lines on X-axis,use 2 lines to form a container 
+// such that it holsd maximum water
+//  ...height = {1,8,6,2,5,4,8,3,7}
 // BRUTE FORCE APPROACH
 import java.util.*;
 public class containerWithMostWater{
