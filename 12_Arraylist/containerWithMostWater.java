@@ -10,7 +10,7 @@ public class containerWithMostWater{
                 int ht= Math.min(height.get(i),height.get(j));
                 int width= j-i;
                 int currWater= ht*width;
-                maxWater= Math.max(maxWater,currWater);
+                maxWater= Math.max\(maxWater,currWater);
             }
         }
         return maxWater;
