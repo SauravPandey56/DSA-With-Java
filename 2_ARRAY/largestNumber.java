@@ -1,3 +1,5 @@
+// find the largest number in a given array
+// {1,2,6,3,5}
 import java.util.*;
 public class largestNumber {
     public static int getLargest(int number[]){
