@@ -9,7 +9,7 @@ public class KthLevelOfATree {
         this.right=null;
       }
     }
-    public static void KLevel(Node root,int level,int k){
+    public static void KLevel(Node root,int level,int k){ // O(n)
         if(root==null){
             return;
         }
