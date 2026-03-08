@@ -29,7 +29,7 @@ public class LowestCommonAncestorApproach1 {
         path.remove(path.size()-1);
         return true ;
     }
-    public static Node LCA (Node root , int n1 , int n2){
+    public static Node LCA (Node root , int n1 , int n2){ // O(n)
         ArrayList<Node>path1=new ArrayList<>();
         ArrayList<Node>path2=new ArrayList<>();
         getPath(root , n1 ,path1);
