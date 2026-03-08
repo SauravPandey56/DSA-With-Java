@@ -27,13 +27,13 @@ public class LowestCommonAncestorApproach1 {
             return true ;
         }
         path.remove(path.size()-1);
-        return true ;
+        return false;
     }
     public static Node LCA (Node root , int n1 , int n2){ // O(n)
         ArrayList<Node>path1=new ArrayList<>();
         ArrayList<Node>path2=new ArrayList<>();
         getPath(root , n1 ,path1);
-        getPath(root , n1 ,path2);
+        getPath(root , n2 ,path2);
         // LAST COMMON ANCESTOR
          int i = 0;
          for(;i<path1.size()&&i<path2.size();i++){
