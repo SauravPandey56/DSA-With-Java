@@ -1,4 +1,4 @@
-public class nqueens {
+public class Nqueens {
     public static boolean isSafe(char board[][], int row, int col) {
         // vertical up
 
